@@ -1,0 +1,42 @@
+
+ table{
+    border-collapse: separate;
+    border-spacing: 0 2em;
+    padding: 2px 2px  2px 2px ;
+    }
+    input[type=text],[type=password] {
+    width: 81.7%;
+    height: 30px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    box-shadow: 0 0 5px #00F5FF;
+    border: 2px solid #00F5FF;
+    color: #4f4f4f;
+    font-size: 16px;
+}
+ .btn
+{
+    width:80px;
+    height:32px;
+    outline:none;
+    font-weight:bold;
+    border:0px solid #27a465;
+    text-shadow: 0px 0.5px 0.5px #fff;
+    border-radius: 2px;
+    font-weight: 600;
+    color: red;
+    letter-spacing: 1px;
+    font-size:14px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    border-radius: 5px;
+}
+#reset:hover{
+    background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
+
+#signup:hover{
+    background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
