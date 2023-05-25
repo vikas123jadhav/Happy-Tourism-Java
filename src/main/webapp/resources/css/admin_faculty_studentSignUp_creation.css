@@ -15,6 +15,11 @@
     color: #4f4f4f;
     font-size: 16px;
 }
+td{
+     width:300px;
+}
+
+
  .btn
 {
     width:80px;

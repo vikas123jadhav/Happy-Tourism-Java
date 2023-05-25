@@ -1,4 +1,4 @@
-package com.solugenix.Virtualclassroom;
+package com.tourism.happytourism;
 
 
 import org.junit.jupiter.api.Test;

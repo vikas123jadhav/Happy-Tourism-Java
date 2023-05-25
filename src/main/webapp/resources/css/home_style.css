@@ -1,0 +1,29 @@
+
+th, td {
+  padding: 10px;
+  height:80px;
+  font-size:20px;
+}
+
+button{
+        width:400px ;
+        height:80px;
+        background-color:cyan;
+        font-size:20px;
+        border: none;
+}
+
+body
+{
+    margin:0px;
+    color:#f7f7f7;
+    font-family:Arial, Helvetica,sans-serif;
+    background-image: url("home_clsrm.jpg");
+       height: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  auto;
+        background-position: inherit;
+        background-size: 100%;
+
+}

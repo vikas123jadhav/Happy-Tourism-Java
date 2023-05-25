@@ -1,37 +1,30 @@
-package com.bankit.pg.razorpay.controller;
-
-import java.math.BigInteger;
-
-import org.json.JSONObject;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+package com.tourism.happytourism.ROZAR_PAY.controller;
 
 import com.razorpay.Order;
 import com.razorpay.RazorpayClient;
 import com.razorpay.RazorpayException;
+import org.json.JSONObject;
+import org.springframework.web.bind.annotation.*;
+
+import java.math.BigInteger;
 
 @RestController
 @RequestMapping("/pg")
+@CrossOrigin("*")
 public class RazorpayController {
 
 	private RazorpayClient client;
-	private static final String SECRET_ID1 = "rzp_test_wmDl5TjphiigG5";
-	private static final String SECRET_KEY1 = "GLHzG7KW47OM0n8fcpWlmwQQ";
-	private static final String SECRET_ID2 = "rzp_test_J4fInjDpTX475d";
-	private static final String SECRET_KEY2 = "r8fNXAB78RmsVfdiQbWGwyjr";
+	private static final String SECRET_ID1 = "rzp_test_oB9YHQXGq0kuXE";
+	private static final String SECRET_KEY1 = "2aRkVCXn5KMwfTkft5XAS5IW";
 
 	@RequestMapping(path = "/createOrder", method = RequestMethod.POST)
 	public OrderResponse createOrder(@RequestBody OrderRequest orderRequest) {
 		OrderResponse response = new OrderResponse();
 		try {
 
-			if (orderRequest.getAmount().intValue() > 1000) {
+
 				client = new RazorpayClient(SECRET_ID1, SECRET_KEY1);
-			} else {
-				client = new RazorpayClient(SECRET_ID2, SECRET_KEY2);
-			}
+
 
 			Order order = createRazorPayOrder(orderRequest.getAmount());
 			System.out.println("---------------------------");
@@ -40,15 +33,11 @@ public class RazorpayController {
 			System.out.println("---------------------------");
 			response.setRazorpayOrderId(orderId);
 			response.setApplicationFee("" + orderRequest.getAmount());
-			if (orderRequest.getAmount().intValue() > 1000) {
+
 				response.setSecretKey(SECRET_KEY1);
 				response.setSecretId(SECRET_ID1);
 				response.setPgName("razor1");
-			} else {
-				response.setSecretKey(SECRET_KEY2);
-				response.setSecretId(SECRET_ID2);
-				response.setPgName("razor2");
-			}
+
 
 			return response;
 		} catch (RazorpayException e) {

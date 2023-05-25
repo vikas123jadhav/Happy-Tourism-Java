@@ -1,13 +1,23 @@
 
+<!DOCTYPE html>
+<html  >
+<head>
+    <meta charset="ISO-8859-1">
+    <title> HOME   </title>
 
-<h1 style="color:red;text-align:center">  Welcome to Visual ClassRoom </h1>
+    <link href="/../resources/css/home_style.css"  rel="stylesheet"/>
+
+</head>
+<body >
+
+<h1 style="color:purple;text-align:center">  Welcome to Visual ClassRoom ..... ! </h1>
 
 <br>
 <br>
 
 
 <div align="center">
- <table>
+ <table style=" width:400px ; ">
               <tr>
                   <th bgcolor="yellow">
                     <b> CHOOSE UR ROLE</b>
@@ -18,23 +28,26 @@
               <tbody align="center" bgcolor="cyan">
               <tr>
                   <td>
-                    <a href="loginAsAdmin"> <button> Admin</button></a>
+                    <a href="loginAsAdmin"> <button  > Admin</button></a>
                   </td>
               </tr>
               <tr>
               </tr>
               <tr>
                   <td>
-                      <a href="faculty/facultyRole"> <button> Faculty</button></a>
+                      <a href="loginAsFaculty"> <button  > Faculty</button></a>
                   </td>
               </tr>
               <tr>
                </tr>
               <tr>
                   <td>
-                      <a href="student/studentRole"> <button> Student</button></a>
+                      <a href="studentLogining"> <button > Student</button></a>
                   </td>
               </tr>
               </tbody>
           </table>
 </div>
+
+</body>
+</html>

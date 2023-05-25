@@ -5,17 +5,17 @@
 body
 {
     margin:0px;
-   /* background-color:#27a465;*/
+   /*background-color:white; */
     color:#f7f7f7;
     font-family:Arial, Helvetica,sans-serif;
-    background-image: url("https://www.bing.com/images/search?view=detailV2&ccid=mx3m3xOh&id=AB9E0C0D327914D0DB14484FCD87CF54480D04F6&thid=OIP.mx3m3xOhJ9U_D3elh6M78AHaEK&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.9b1de6df13a127d53f0f77a587a33bf0%3frik%3d9gQNSFTPh81PSA%26riu%3dhttp%253a%252f%252fpavbca.com%252fwalldb%252foriginal%252fe%252ff%252f0%252f615170.jpg%26ehk%3dm6TzthTIp2ebaIgILYppBgSvTPuhoApFnyyvx%252f%252bSW%252bw%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1152&expw=2048&q=Classroom+Background&simid=608028796743788570&FORM=IRPRST&ck=8A6FFE21364DD5F8C86D2C8ED341F704&selectedIndex=2&ajaxhist=0&ajaxserp=0");
-    height: 100px;
+    background-image: url("classroom.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size:  auto;
     background-position: inherit;
     background-size: 100%;
-    background-color: maroon;
+
 }
 
 h2{

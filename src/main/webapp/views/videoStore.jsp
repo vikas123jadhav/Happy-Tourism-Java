@@ -1,7 +1,24 @@
+<!DOCTYPE html>
+
 <%@ page language="java" isELIgnored="false" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 
-<h1 style="color:red;text-align:center" xmlns:form="http://www.w3.org/1999/xhtml"> Upload Video <h1>
+
+<html xmlns:c="http://www.w3.org/1999/XSL/Transform" xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="ISO-8859-1">
+    <title> Store Video   </title>
+
+    <link href=" /../resources/css/button_style.css"   rel="stylesheet"/>
+    <style>
+    table,td,tr{
+    padding: 20px;
+    }
+    </style>
+</head>
+<body  >
+
+<h1 style="color:red;text-align:center" > Upload Video </h1>
 
     <form:form modelAttribute="pptAndVideoModel" enctype="multipart/form-data">
         <table align="center" bgcolor="cyan" border="0">
@@ -27,15 +44,20 @@
     </form:form>
 
     <blink>
+         <h4 Style="color:green;text-align:center">   ${resultMsg}</h4>
         <h4 Style="color:green;text-align:center">   ${videoFile}</h4><br>
-        <h4 Style="color:green;text-align:center">   ${resultMsg}</h4>
+        <h4 Style="color:red;text-align:center">   ${validVideoorNot}</h4>
+
     </blink>
 
     <center>
         <div style="float:center">
-
-            <a href="classroom" ><h4>Change Role</h4> </a>
-            <a href="loginAsAdmin" ><h4>To Admin Login</h4> </a>
-            <a href="toDashBoard" ><h4>Back </h4> </a>
+            <a href="classroom" ><button id="btn1">Change Role </button> </a> <br> <br>
+            <a href="loginAsAdmin" ><button id="btn2">To Admin Login </button> </a><br> <br>
+            <a href="toDashBoard" ><button id="btn3">Back </button> </a>
         </div>
     </center>
+
+
+</body>
+</html>
